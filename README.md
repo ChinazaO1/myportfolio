@@ -3,6 +3,7 @@ This is my portfolio repository and I created a new branch called feature/bio-pa
 
 # Hosting
 My portfolio is hosted on GitHub and all updates I make on this project reflects on my github
+Here is the link to my deployed application https://chinazao1.github.io/myportfolio/
 
 ## Functionality
 
