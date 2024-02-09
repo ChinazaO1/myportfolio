@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                width: 100%;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+    
+            input, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    
+            input[type="submit"] {
+                background-color: #a5761f;
+                color: #fff;
+                cursor: pointer;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #a5761f;
+            }
+        </style>
+        <script>
+             document.addEventListener('DOMContentLoaded', function () {
+            var form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                
+                var successMessage = "Thank you very much for your submission. We will be in touch shortly!";
+                var errorMessage = "An error occurred. Please try again.";
+
+                var formData = new FormData(form);
+                formData.append("subject", "New Contact Form Submission");
+                formData.append("from Name", "Contact Form");
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                })
+                .then(response => response.json())
+                .then(data => {
+                    
+                    if (data.success) {
+                        
+                        alert(successMessage);
+
+                        
+                        window.location.href = 'thank-you.html';
+                    } else {
+                        
+                        alert(errorMessage);
+                    }
+                })
+                .catch(error => {
+                    
+                    alert(errorMessage);
+                });
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <input type="hidden" name="apikey" value="3750923f-5045-4cf4-914d-a21af375ec91">
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>

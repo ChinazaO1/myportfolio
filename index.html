@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Chinaza's Portfolio</title>
+    <link rel="stylesheet" href="./style-bio.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-mycraft.css">
+    <link rel="stylesheet" href="./style-resume.css">
+</head>
+
+<body>
+    <a href="first-index.html">Go to Home</a>
+    <header>
+        <h1><i>Chinaza's Portfolio</i></h1>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#my-craft">My Craft</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact-me">Contact Me</a>
+        </nav>
+    </header>
+
+    <div class="bio-container">
+        <section id="about-me" class="bio-section">
+            <h2><i>About Chinaza O</i></h2>
+            <div class="bio-image">
+                <img src="pics1.jpeg" alt="Chinaza" class="square-image">
+            </div>
+            <p>I'm grateful that you stopped by, I believe you may want to know a little about me. I'm <b>Chinaza</b>, a lady blessed with creative hands. 
+                <p>I tell lasting stories through my lens and I am on a journey to bless the <b><i>World with my talents </i></b>.</p> 
+                <p> I'm excited and positive about this journey. While on it, I'll be sharing my gifts with you. I'll love you to stick around.</p>
+        </section>
+
+        <section id="my-craft" class="my-craft-section">
+            <h2><i>My Craft</i></h2>
+            <p><i><h3>Here are some of my shots</h3></i></p>
+            <div class="project-images">
+                <a href="placeholder-project.html" target="_blank">
+                    <img src="pics2.png" alt="Project 1" class="featured-image">
+                </a>
+                <a href="placeholder-project.html" target="_blank">
+                    <img src="pics6.jpg" alt="Project 2">
+                </a>
+                <a href="placeholder-project.html" target="_blank">
+                    <img src="pics7.JPG" alt="Project 3">
+                </a>
+                <a href="placeholder-project.html" target="_blank">
+                    <img src="pics5.jpg" alt="Project 4">
+                </a>
+            </div>
+        </section>
+
+        <section id="resume" class="resume-section">
+            <h2><i>Resume</i></h2>
+            <div class="experiences">
+                <h3>Experiences</h3>
+                <ul>
+                    <li>Photographer and Creative Director - COO Creative Inc. (Current)</li>
+                    <li>Business Analyst - SkillHat (2022)</li>
+                    <li>Content Creator - Adonia Beauty (2021)</li>
+                    <li>Office Administrator - RCCG COG</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Creative Directing</li>
+                    <li>Project Management</li>
+                    <li>Photo & Video Editing Expert</li>
+                    <li>Adobe Photoshop & Lightroom Expert</li>
+                    
+
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <ul class="footer-contact-info">
+            <li><strong>Contact Chinaza:</strong> <a href="contact-us.html">Click Here</a></li>
+            <li><strong>Github:</strong> <a href="https://github.com/ChinazaO1" target="_blank">ChinazaO1</a></li>
+            <li><strong>Portfolio:</strong> <a href="#">Coming Soon</a></li>
+        </ul>
+        <p>&copy; Chinaza 2024</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a, footer a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                
+                if (targetId.startsWith('#')) {
+                    // Internal link, scroll smoothly
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - document.querySelector('header').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                } else {
+                    // External link, open in a new tab
+                    window.open(this.href, '_blank');
+                }
+            });
+        });
+    </script>
+    
+
+</body>
+
+</html>

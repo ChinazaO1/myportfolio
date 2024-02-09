@@ -1,0 +1,244 @@
+/* Add styling to the elements */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efeee7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333333;
+}
+
+/* Styling the header */
+header {
+  background-color: #a5761f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styling h1 */
+h1 {
+  color: #eee;
+  font-size: 38px;
+  margin: 0;
+}
+
+/* Styling h2 */
+h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.bio-image {
+  display: flex;
+  justify-content: center;
+}
+
+.square-image {
+
+  width: 400px; 
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50px; 
+
+}
+
+/* Styling the main container */
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Styling new sections */
+.bio-section {
+  width: calc(60% - 20px); /* Increased width for the About section and adjusted margin */
+  margin: 20px 0;
+  padding: 10px; /* Increased padding for better spacing within each section */
+  background-color: #f5e5cc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-section,
+
+.mycraft-section {
+  width: 60%; /* Adjust the width as needed */
+  margin: 100px auto; /* Center the section and adjust the margin as needed */
+  padding: 20px;
+  background-color: #a5761f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+
+}
+.project-images {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.featured-image {
+  max-width: 100%;
+  border-radius: 8px; /* Apply border-radius to images */
+  margin-bottom: 10px;
+}
+
+.resume-section {
+  width: calc(60% - 20px); /* Adjusted width calculation to include padding */
+  margin: 20px 0;
+  padding: 10px; /* Increased padding for better spacing within each section */
+  background-color: #f5e5cc;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align:center;
+  font-size: 18px;
+}
+
+/* Styling links */
+a {
+  color: #ffb14be8;
+}
+
+/* Removing underlines from links */
+a:hover {
+  text-decoration: none;
+}
+
+/* Responsive image styling */
+img {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 100px;
+  transition: transform 0.5s; /* Add transition for a smooth effect */
+}
+
+/* Scale up the image on hover */
+img:hover {
+  transform: scale(1.3); /* Adjust the scaling factor as needed */
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Navigation link styling */
+nav {
+  background-color: #a3742e;
+  padding: 20px; /* Increased padding for better spacing */
+  text-align: right;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Footer styling */
+footer {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 7px; /* Increased padding for better spacing */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #a5761f;
+}
+
+/* Contact info in the footer */
+.footer-contact-info {
+  font-size: 20px;
+  margin-top: 1px; /* Adjusted margin for better spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  
+}
+
+.footer-contact-info li {
+  margin: 0 30px; /* Adjusted margin for better spacing */
+  white-space: nowrap;
+}
+
+/* Media query for smaller screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .bio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-section,
+  .contact-section,
+  .mycraft-section,
+  .resume-section {
+    width: 80%;
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .bio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-section,
+  .contact-section,
+  .mycraft-section,
+  .resume-section {
+    width: 90%; 
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .bio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-section,
+  .contact-section,
+  .mycraft-section,
+  .resume-section {
+    width: 90%; 
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .bio-container {
+    justify-content: space-around;
+  }
+
+  .bio-section,
+  .contact-section,
+  .mycraft-section,
+  .resume-section {
+    width: 100%; 
+  }
+}
+
+@media screen and (min-width:1201px) and (orientation: landscape) {
+  .bio-container {
+    justify-content: space-around;
+  }
+
+  .bio-section,
+  .contact-section,
+  .mycraft-section,
+  .resume-section {
+    width: 100%; 
+  }  
+}

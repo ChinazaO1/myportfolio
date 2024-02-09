@@ -1,0 +1,31 @@
+/* Add styling for My Craft section */
+#my-craft {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#my-craft h2 {
+    color: #333;
+}
+
+#my-craft p {
+    font-style: italic;
+    color: #666;
+}
+
+#my-craft img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid #ddd; /* Add border for image */
+    border-radius: 8px; /* Add border radius for a rounded look */
+}
+
+#my-craft img.featured-image {
+    border: 2px solid #ff6600; /* Change border color for featured image */
+}
+
+/* Add spacing between images */
+#my-craft img:not(:last-child) {
+    margin-right: 10px;
+}

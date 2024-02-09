@@ -1,0 +1,39 @@
+/* style-resume.css */
+#Resume {
+    width: 100%;
+    margin: 20px;
+}
+
+.Resume-section h2 {
+    font-size: 24px;
+    color: #a5761f;
+}
+
+.Resume-section h3 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.Resume-section p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.Resume-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Resume-section li {
+    margin-bottom: 8px;
+}
+
+.Resume-section a {
+    color: #d21034;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Resume-section a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,101 @@
+ /* Add styling to the elements */
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: #efeee7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333333;
+  }
+
+  /* Styling the header */
+
+  header {
+    background-color: #815b07;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Styling h1 */
+  h1 {
+    color: #eee;
+    font-size: 28px;
+    margin: 0; /* Remove default margin */
+  }
+
+  /* Styling h2 */
+  h2 {
+    font-size: 24px;
+    float: left;
+
+  }
+  /* Styling the main container */
+  .bio-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  float: left;
+}
+/* Styling the #bio-image */
+.bio-image {
+    width: 200px;
+    height: 200px;
+   
+    
+    margin-left: 20px; /* Add margin to the left for spacing */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Styling #main-bio, #contact-info, and #bio-image */
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+/* Styling #main-bio */
+#main-bio {
+  width: 70%;
+  
+}
+
+/* Styling #contact-info */
+#contact-info {
+  width: 30%;
+  line-height: 1.5; /* 1.5 times the size of the font */
+}
+
+/* Styling links */
+a {
+  color: #d21034;
+}
+
+/* Removing underlines from links */
+a:hover {
+  text-decoration: none;
+}
+  
+  .bio-section,
+  .contact-section {
+    width: 45%;
+  }
+  
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
