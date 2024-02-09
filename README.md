@@ -1,12 +1,12 @@
 # myportfolio
-This is my portfolio repository
+This is my portfolio repository and I created a new branch called feature/bio-page
 
 # Hosting
-My portfolio is hosted on GitHub
+My portfolio is hosted on GitHub and all updates I make on this project reflects on my github
 
 ## Functionality
 
-My Portfolio page is responsive when the links and photos are clicked on
+My Portfolio page is responsive when the links and photos are clicked on. Under my craft section, all photos when clicked on redirects you to a new page which is still under development
 
 ## Contributing
 
