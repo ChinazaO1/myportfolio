@@ -1,5 +1,5 @@
-# myportfolio
-This is my portfolio repository
+# Chinaza's Portfolio
+Welcome to my GitHub portfolio! This repository showcases my projects, skills, and experience in the field of [Your Field/Area of Expertise].
 
 # Hosting
 My portfolio is hosted on GitHub
